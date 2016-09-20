@@ -1,4 +1,4 @@
-## Analytics Reporter [![Build Status](https://travis-ci.org/401ode/analytics-reporter.svg?branch=master)](https://travis-ci.org/401ode/analytics-reporter)[![codecov](https://codecov.io/gh/401ode/analytics-reporter/branch/master/graph/badge.svg)](https://codecov.io/gh/401ode/analytics-reporter)
+## Analytics Reporter [![Build Status](https://travis-ci.org/401ode/analytics-reporter.svg?branch=master)](https://travis-ci.org/401ode/analytics-reporter)[![codecov](https://codecov.io/gh/401ode/analytics-reporter/branch/master/graph/badge.svg)](https://codecov.io/gh/401ode/analytics-reporter)[![Known Vulnerabilities](https://snyk.io/test/github/401ode/analytics-reporter/badge.svg)](https://snyk.io/test/github/401ode/analytics-reporter)
 
 
 A lightweight system for publishing analytics data from Google Analytics profiles. Uses the [Google Analytics Core Reporting API v3](https://developers.google.com/analytics/devguides/reporting/core/v3/) and the [Google Analytics Real Time API v3](https://developers.google.com/analytics/devguides/reporting/realtime/v3/).
