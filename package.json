@@ -10,7 +10,9 @@
   "license": "CC0-1.0",
   "scripts": {
     "start": "node app.js",
-    "test": "node test/*"
+    "test": "node test/*",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "contributors": [
     {
@@ -51,16 +53,22 @@
     "url": "https://github.com/18F/analytics-reporter/issues"
   },
   "dependencies": {
-    "googleapis": "^2.1.5",
+    "googleapis": "^12.1.0",
     "node-schedule": "^0.1.13",
     "minimist": "*",
     "async": "*",
     "aws-sdk": "*",
     "fast-csv": "*",
-    "lodash": "^3.10.1"
+    "lodash": "^3.10.1",
+    "snyk": "^1.19.1"
   },
   "devDependencies": {
     "body-parser": "~1.8.1",
+    "express": "~4.9.0",
+    "ejs": "~2.3.1"
+  },
+  "snyk": true
+}
     "coveralls": "^2.11.14",
     "ejs": "~2.3.1",
     "express": "~4.9.0"
