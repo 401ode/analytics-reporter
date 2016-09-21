@@ -9,7 +9,7 @@
   "homepage": "https://github.com/18F/analytics-reporter",
   "license": "CC0-1.0",
   "scripts": {
-    "start": "node app.js",
+    "start": "node app/app.js",
     "test": "node test/*",
     "snyk-protect": "snyk protect",
     "prepublish": "npm run snyk-protect"
@@ -53,13 +53,14 @@
     "url": "https://github.com/18F/analytics-reporter/issues"
   },
   "dependencies": {
-    "googleapis": "^12.1.0",
-    "node-schedule": "^0.1.13",
-    "minimist": "*",
     "async": "*",
     "aws-sdk": "*",
+    "cfenv": "^1.0.3",
     "fast-csv": "*",
+    "googleapis": "^12.1.0",
     "lodash": "^3.10.1",
+    "minimist": "*",
+    "node-schedule": "^0.1.13",
     "snyk": "^1.19.1"
   },
   "devDependencies": {

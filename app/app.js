@@ -3,7 +3,14 @@ var express = require('express'),
     ejs = require('ejs'),
     app = express();
 app.use(require('body-parser').json());
-app.set('port', process.env.PORT || 3000);
+
+// CFenv Setup
+var cfenv = require("cfenv");
+var appEnv = cfenv.getAppEnv();
+// uri = appEnv.getServiceURL("beckley-es");
+
+// app.set('port', process.env.PORT || 3000);
+app.set('port', appEnv.port || 3000);
 
 // Attach the routes.
 var models = require("./models");
