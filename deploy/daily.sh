@@ -5,8 +5,8 @@ source $HOME/.bashrc
 
 # JSON and CSV versions
 source $HOME/envs/projects/dap-1.env
-$HOME/analytics-reporter/bin/analytics --publish --frequency=daily --slim --verbose
-$HOME/analytics-reporter/bin/analytics --publish --frequency=daily --slim --verbose --csv
+$HOME/analytics-reporter/bin/analytics --output $HOME/reports --frequency=daily --slim --verbose
+$HOME/analytics-reporter/bin/analytics --output $HOME/reports --frequency=daily --slim --verbose --csv
 
 # ED Reports
 # source $HOME/envs/projects/dap-1.env
@@ -161,18 +161,18 @@ $HOME/analytics-reporter/bin/analytics --publish --frequency=daily --slim --verb
 # DMV
 # source $HOME/envs/projects/dap-2.env
 source $HOME/envs/dmv/.env
-$HOME/analytics-reporter/bin/analytics --publish --frequency=daily --slim --verbose
-$HOME/analytics-reporter/bin/analytics --publish --frequency=daily --slim --verbose --csv
+$HOME/analytics-reporter/bin/analytics --output $HOME/reports --frequency=daily --slim --verbose
+$HOME/analytics-reporter/bin/analytics --output $HOME/reports --frequency=daily --slim --verbose --csv
 
 # OMB
 # source $HOME/envs/projects/dap-2.env
 source $HOME/envs/omb/.env
-$HOME/analytics-reporter/bin/analytics --publish --frequency=daily --slim --verbose
-$HOME/analytics-reporter/bin/analytics --publish --frequency=daily --slim --verbose --csv
+$HOME/analytics-reporter/bin/analytics --output $HOME/reports --frequency=daily --slim --verbose
+$HOME/analytics-reporter/bin/analytics --output $HOME/reports --frequency=daily --slim --verbose --csv
 
 # Purchasing
 # source $HOME/envs/projects/dap-2.env
 source $HOME/envs/purchasing/.env
-$HOME/analytics-reporter/bin/analytics --publish --frequency=daily --slim --verbose
-$HOME/analytics-reporter/bin/analytics --publish --frequency=daily --slim --verbose --csv
+$HOME/analytics-reporter/bin/analytics --output $HOME/reports --frequency=daily --slim --verbose
+$HOME/analytics-reporter/bin/analytics --output $HOME/reports --frequency=daily --slim --verbose --csv
 

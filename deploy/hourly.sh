@@ -140,14 +140,14 @@ source $HOME/.bashrc
 # DMV
 # source $HOME/envs/projects/dap-2.env
 source $HOME/envs/dmv/.env
-$HOME/analytics-reporter/bin/analytics --publish --frequency=hourly --slim --verbose
-$HOME/analytics-reporter/bin/analytics --publish --frequency=hourly --slim --verbose --csv
+$HOME/analytics-reporter/bin/analytics --output $HOME/reports --frequency=hourly --slim --verbose
+$HOME/analytics-reporter/bin/analytics --output $HOME/reports --frequency=hourly --slim --verbose --csv
 
 # OMB
 # source $HOME/envs/projects/dap-2.env
 source $HOME/envs/omb/.env
-$HOME/analytics-reporter/bin/analytics --publish --frequency=hourly --slim --verbose
-$HOME/analytics-reporter/bin/analytics --publish --frequency=hourly --slim --verbose --csv
+$HOME/analytics-reporter/bin/analytics --output $HOME/reports --frequency=hourly --slim --verbose
+$HOME/analytics-reporter/bin/analytics --output $HOME/reports --frequency=hourly --slim --verbose --csv
 
 # Purchasing
 # source $HOME/envs/projects/dap-2.env

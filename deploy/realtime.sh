@@ -4,7 +4,7 @@ export PATH=$PATH:/usr/local/bin
 source $HOME/.bashrc
 
 # source $HOME/envs/projects/dap-1.env
-$HOME/analytics-reporter/bin/analytics --publish --frequency=realtime --slim --verbose
+$HOME/analytics-reporter/bin/analytics --output $HOME/reports --frequency=realtime --slim --verbose
 # # we want just one realtime report in CSV, hardcoded for now to save on API requests
 # # $HOME/analytics-reporter/bin/analytics --publish --only=all-pages-realtime --slim --verbose --csv
 
@@ -169,17 +169,17 @@ $HOME/analytics-reporter/bin/analytics --publish --frequency=realtime --slim --v
 # DMV
 # source $HOME/envs/projects/dap-2.env
 source $HOME/envs/dmv/.env
-$HOME/analytics-reporter/bin/analytics --publish --frequency=realtime --slim --verbose
-$HOME/analytics-reporter/bin/analytics --publish --frequency=realtime --slim --verbose --csv
+$HOME/analytics-reporter/bin/analytics --output $HOME/reports --frequency=realtime --slim --verbose
+$HOME/analytics-reporter/bin/analytics --output $HOME/reports --frequency=realtime --slim --verbose --csv
 
 # OMB
 # source $HOME/envs/projects/dap-2.env
 source $HOME/envs/omb/.env
-$HOME/analytics-reporter/bin/analytics --publish --frequency=realtime --slim --verbose
-$HOME/analytics-reporter/bin/analytics --publish --frequency=realtime --slim --verbose --csv
+$HOME/analytics-reporter/bin/analytics --output $HOME/reports --frequency=realtime --slim --verbose
+$HOME/analytics-reporter/bin/analytics --output $HOME/reports --frequency=realtime --slim --verbose --csv
 
 # Purchasing
 # source $HOME/envs/projects/dap-2.env
 source $HOME/envs/purchasing/.env
-$HOME/analytics-reporter/bin/analytics --publish --frequency=realtime --slim --verbose
-$HOME/analytics-reporter/bin/analytics --publish --frequency=realtime --slim --verbose --csv
+$HOME/analytics-reporter/bin/analytics --output $HOME/reports --frequency=realtime --slim --verbose
+$HOME/analytics-reporter/bin/analytics --output $HOME/reports --frequency=realtime --slim --verbose --csv
