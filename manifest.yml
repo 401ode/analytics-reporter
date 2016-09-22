@@ -1,0 +1,8 @@
+applications:
+- name: ri-gov-analytics-reporter
+  instances: 1
+  memory: 512M
+  disk_quota: 1024M
+  routes:
+  - route: ri-gov-analytics-reporter.apps.cloud.gov
+  stack: cflinuxfs2

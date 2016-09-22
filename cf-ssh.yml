@@ -1,0 +1,11 @@
+applications:
+- command: curl https://18f-tmate-bootstrap.s3.amazonaws.com/tmate-debug-init.sh |
+    sh
+  disk_quota: 1024M
+  instances: 1
+  memory: 512M
+  name: ri-gov-analytics-reporter-ssh
+  no-route: true
+  routes:
+  - route: ri-gov-analytics-reporter.apps.cloud.gov
+  stack: cflinuxfs2

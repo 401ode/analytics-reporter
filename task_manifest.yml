@@ -1,0 +1,9 @@
+applications:
+- name: install-autoenv
+  memory: 512M
+  disk_quota: 1024M
+  routes:
+  - route: ri-gov-analytics-reporter.apps.cloud.gov
+  stack: cflinuxfs2
+  no-route: true
+  command: (git clone git://github.com/kennethreitz/autoenv.git ~/.autoenv && echo SUCCESS || echo FAIL && echo 'source ~/.autoenv/activate.sh' >> ~/.bashrc && echo SUCCESS || echo FAIL) && sleep infinity
