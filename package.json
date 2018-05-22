@@ -57,7 +57,7 @@
     "aws-sdk": "*",
     "cfenv": "^1.0.3",
     "fast-csv": "*",
-    "googleapis": "^12.1.0",
+    "googleapis": "^16.0.0",
     "lodash": "^3.10.1",
     "minimist": "*",
     "node-schedule": "^0.1.13",
