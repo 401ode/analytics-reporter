@@ -61,7 +61,7 @@
     "lodash": "^3.10.1",
     "minimist": "*",
     "node-schedule": "^0.1.13",
-    "snyk": "^1.19.1"
+    "snyk": "^1.232.0"
   },
   "devDependencies": {
     "body-parser": "~1.8.1",
