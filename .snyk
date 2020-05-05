@@ -1,6 +1,11 @@
-version: v1.5.0
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
 ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:request:20160119':
     - googleapis > google-auth-library > request:
         patched: '2016-09-20T14:31:33.007Z'
+  SNYK-JS-LODASH-567746:
+    - googleapis > async > lodash:
+        patched: '2020-05-05T05:49:57.988Z'
